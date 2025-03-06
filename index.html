@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta name="author" content="Guillem Vaquer Nebot">
+    <title>Bilingüalitzador de textos, sobre el projecte</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <div id="contenedor">
+  <header>
+  <div id="cabecera">
+    <h1>Bilingüalitzador de textos</h1>
+    <h2>Guillem Vaquer Nebot</h2>
+  </div>
+  </header>
+  <div id="menu">
+    <ul class="menu">
+    <li><a class="navegacion" href="index.html">Inici</a></li>
+    <li><a class="navegacion" href="about.html">Projecte</a></li>
+    <li><a class="navegacion" href="tech.html">Recursos</a></li>
+    <li><a class="navegacion" href="links.html">Links</a></li>
+    </ul>
+  </div>
+  <div id="contenido">
+  <audio controls>
+    <source src="img/musica.mp3" type="audio/ogg">
+    Your browser does not support the audio tag.
+</audio>
+<h3>Intruccions:</h3>
+<ol>
+  <li>Proporciona el teu nom i e-mail</li>
+  <li>Còpia un text en el recuadre</li>
+  <li>Selecciona la teua àrea geogràfica</li>
+  <li>Espera que el text arribe al teu mail en versió bilingüe</li>
+</ol>
+<form name="miFormulario" action="/paginaQueEjecutaLaAccion.php" method="post">
+<fieldset>
+<legend>Contacte</legend>
+<div class="form">
+<label for="nom_form">Nom</label>
+  <input id="nom_form" type="text" name="nom" placeholder="Escribe tu nombre" required/>
+</div>
+<div class="form">
+  <label for="mail_form">E-mail</label>
+  <input id="mail_form" type="email" name="mail" placeholder="tu.e-mail@mail.com" required>
+</div>
+<div class="form">
+  <label for="regio_form">Regió</label>
+  <select id="regio_form" name="regio" required>
+  <option value="Euskadi">Euskadi </option>
+  <option value="Quebec">Quebec </option>
+</select>
+</div>
+</fieldset>
+<fieldset>
+<legend>Text</legend>
+  <label class="block" for="text_form">Inserta el text per crear-ne la versió bilingüe:</label>
+   <textarea id="text_form" name="text" rows="20" cols="150" placeholder="Copia el teu text aquí." required></textarea>
+  <input class="boto" type="submit" value="Enviar">
+  </fieldset>
+</form>
+<video width="320" height="240" controls>
+  <source src="img/video.mp4" type="video/mp4">
+  Your browser does not support the video player.
+</video>
+</div>
+</div>
+  </body>
+</html>
+
