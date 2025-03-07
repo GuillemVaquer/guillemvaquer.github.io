@@ -1,0 +1,36 @@
+<!--
+ La parte fija del fichero xml correspondiente a un rss
+-->
+<rss version="2.0">
+  <channel>
+    <title>Feed de Guillem</title>
+    <link>https://guillemvaquer.github.io/</link>
+    <description>Contenidos curiosos</description>
+    <!-- La parte fija opcional -->
+    <language>ca-CA</language>
+    <image>
+      <title>Foto de Github</title>
+      <url>https://guillemvaquer.github.io/img/icon_github.png</url>
+      <link>http://www.mipagina.com</link>
+      <width>90</width>
+      <height>36</height>
+    </image>
+    <!--
+     La parte variable, la que corresponde a cada noticia o ítem
+    -->
+    <item>
+      <title>Aquí puedes traducir textos</title>
+      <link>
+        https://guillemvaquer.github.io/index.html
+      </link>
+      <description>Aquí puedes poner la traducción</description>
+    </item>
+    <item>
+      <title>Referencias que se usan para traducir</title>
+      <link>
+        https://guillemvaquer.github.io/tech.html
+      </link>
+      <description>HTML, Libretranslate, CSS, Java</description>
+    </item>
+  </channel>
+</rss>
