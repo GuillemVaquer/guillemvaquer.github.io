@@ -3,7 +3,7 @@
   <head>
     <meta name="author" content="Guillem Vaquer Nebot">
     <title>Bilingüalitzador de textos, sobre el projecte</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
   <div id="contenedor">
@@ -23,30 +23,30 @@
   </div>
   <div id="contenido">
   <audio controls>
-    <source src="img/musica.mp3" type="audio/ogg">
+    <source src="multimedia/musica.mp3" type="audio/ogg">
     Your browser does not support the audio tag.
-</audio>
+</audio> 
 <h3>Intruccions:</h3>
 <ol>
   <li>Proporciona el teu nom i e-mail</li>
   <li>Còpia un text en el recuadre</li>
   <li>Selecciona la teua àrea geogràfica</li>
-  <li>Espera que el text arribe al teu mail en versió bilingüe</li>
+  <li>Espera a que el text arribe al teu mail en versió bilingüe</li>
 </ol>
 <form name="miFormulario" action="/paginaQueEjecutaLaAccion.php" method="post">
 <fieldset>
 <legend>Contacte</legend>
 <div class="form">
-<label for="nom_form">Nom</label>
-  <input id="nom_form" type="text" name="nom" placeholder="Escribe tu nombre" required/>
+<label for="nom">Nom</label>
+  <input type="text" name="nom" placeholder="Escribe tu nombre" required></input>
 </div>
 <div class="form">
-  <label for="mail_form">E-mail</label>
-  <input id="mail_form" type="email" name="mail" placeholder="tu.e-mail@mail.com" required>
+  <label for="mail">E-mail</label>
+  <input type="email" name="mail" placeholder="tu.e-mail@mail.com" required></input>
 </div>
 <div class="form">
-  <label for="regio_form">Regió</label>
-  <select id="regio_form" name="regio" required>
+  <label for="regio">Regió</label>
+  <select name="regio" placeholder="Regió" required>
   <option value="Euskadi">Euskadi </option>
   <option value="Quebec">Quebec </option>
 </select>
@@ -54,13 +54,13 @@
 </fieldset>
 <fieldset>
 <legend>Text</legend>
-  <label class="block" for="text_form">Inserta el text per crear-ne la versió bilingüe:</label>
-   <textarea id="text_form" name="text" rows="20" cols="150" placeholder="Copia el teu text aquí." required></textarea>
+  <label class="block" for="text">Inserta el text per crear-ne la versió bilingüe:</label>
+   <textarea name="text" rows="20" cols="150" placeholder="Copia el teu text aquí." required></textarea>
   <input class="boto" type="submit" value="Enviar">
   </fieldset>
 </form>
 <video width="320" height="240" controls>
-  <source src="img/video.mp4" type="video/mp4">
+  <source src="multimedia/video.mp4" type="video/mp4">
   Your browser does not support the video player.
 </video>
 </div>
