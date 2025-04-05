@@ -1,0 +1,368 @@
+/*contenedores*/
+
+#contenedor {
+    width : 90%;
+    margin: auto;
+}
+
+#cabecera {
+    margin: auto;
+    width: 50%;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenido {
+    margin-top: 2em;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* texto */
+
+    p {
+        text-align: justify;
+    }
+
+    body {
+        color: white;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    div {
+        margin: .4em .4em;
+    }
+
+    /*encabezados*/
+
+    h1 {
+        font-weight: bolder;
+        font-variant: small-caps;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-style: oblique;
+        text-align: center;
+    }
+
+    /*menu*/
+
+    header#navegacio {
+        background-color: rgba(20, 20, 20, 1);
+    }
+
+    ul.menu {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        clear: both;
+        width: 100%;
+        list-style: none;
+        margin: auto;
+        padding: 0;
+    }
+
+    ul.menu li {
+        display: flex;
+        justify-content: center;
+        float: left;
+    }
+
+    ul.menu li a {
+        font-size: large;
+        font-stretch: expanded;
+        color: rgba(230, 230, 200, 1);
+        background: rgba(20, 20, 10, 1);
+        border: 1px outset white;
+        padding: .1em .5em;
+    }
+
+    ul.menu li a:hover {
+        background: white;
+        color: black;
+    }
+
+    ul {
+        list-style-type: square;
+    }
+
+    /*links*/
+
+    a {
+        color: lightblue;
+    }
+
+    a:visited {
+        color: purple;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    a.navegacion {
+        font-size: large;
+        font-stretch: expanded;
+        color: rgba(230, 230, 200, 1);
+        background: rgba(20, 20, 10, 1);
+        border: 1px outset white;
+        padding: .1em .5em;
+    }
+
+    a.navegacion:hover {
+        background: white;
+        color: black;
+    }
+
+    /*tabla*/
+
+    table {
+        border: 1px solid white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        caption-side: bottom;
+    }
+
+    dt {
+        font-variant: small-caps;
+    }
+
+    dd {
+        font-style: italic;
+    }
+
+    td {
+        border: 1px solid white;
+        text-align: center;
+    }
+
+    tr#encabezado_tabla {
+        font-weight: bolder
+    }
+
+    tr:hover {
+        background: rgba(230, 230, 200, 1);
+        color: black;
+    }
+
+    table.sinBorde {
+        border: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    td.sinBorde {
+        border: none;
+        text-align: center;
+    }
+
+    caption {
+        font-size: x-small;
+        text-align: left;
+    }
+
+    audio {
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: flex-start;
+    }
+
+    video {
+        align-self: center;
+    }
+
+    img.responsive {
+        width: 100%;
+    }
+
+    /*Form*/
+
+    form input {
+        padding: .3em;
+    }
+
+    form input:focus {
+        border: 2px solid white;
+        background-color: lightgrey;
+    }
+
+    div.textarea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form textarea {
+        padding: .4em;
+        width: 95%;
+    }
+
+    form textarea:focus {
+        border: 2px solid white;
+        margin: auto;
+    }
+
+    input.boto {
+        margin: .4em;
+        width: 5em;
+    }
+
+    label.block {
+        display: block;
+        margin: .5em 0 0 0;
+    }
+
+
+    div.form {
+        margin: .4em 0;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    div.form label {
+        grid-row: 1;
+    }
+
+    input {
+        padding: .3em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    label {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+/* modificaciones con mediaqueries */
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media screen and  (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media screen and  (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media screen and (min-width: 992px){
+
+    #tech {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #layout {
+         width: 100%;
+         display: grid;
+         grid-template-columns: 20% 80%;
+         margin-top: 2em;
+     }
+
+    #contenedor {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    #contenido {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        grid-column: 2;
+    }
+    #menu {
+        margin-top: 4em;
+        display: block;
+        height: 100%;
+        float: none;
+        width: 100%;
+        color : rgba(230,230,200,1);
+        background: black;
+    }
+
+
+    ul.menu {
+        display: block;
+        float: none;
+        background-color: black;
+        clear: both;
+        width: 100%;
+        list-style: none;
+    }
+
+    ul.menu li {
+        float: none;
+        justify-content: center;
+        display: block;
+        width: 100%;
+    }
+
+    ul.menu li a {
+        display: block;
+        width: 100%;
+        font-size: large;
+        font-stretch: expanded;
+        color: rgba(230, 230, 200, 1);
+        background: rgba(20, 20, 10, 1);
+        border: 1px outset white;
+        padding: .1em .5em;
+        margin: .05em;
+    }
+
+    #menu {
+        grid-column: 1;
+    }
+
+}
+
+
+

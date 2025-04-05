@@ -1,0 +1,191 @@
+#contenedor {
+max-width: 1000px;
+min-width: 500px;
+width: 100%;
+margin : 0 auto;
+}
+#cabecera {
+float : top;
+}
+#menu {
+float: left;
+width: 5%;
+border-left: 1px solid white;
+position : absolute;
+color : rgba(230,230,200,1);
+background: rgba(20,20,10,1);
+border: 1px outset white;
+padding: .2em;
+}
+
+#contenido {
+float: right;
+width: 85%;
+}
+#pie {
+clear: both;
+}
+
+h1 { 
+font-weight : bolder;
+font-variant : small-caps;
+text-decoration : underline;
+text-align : center;
+}
+
+h2{ 
+font-weight : bold;
+font-style : oblique;
+text-align : center;
+}
+
+ul.menu{
+clear: both;
+float: left;
+width: 100%;
+list-style : none;
+margin : 0;
+padding : 0;
+}
+ul.menu li{
+}
+ul.menu li a{
+font-size : large;
+font-stretch : expanded;
+padding: .1em .5em;
+}
+ul.menu li a:hover{
+background: grey;
+color: lightgrey;
+}
+
+dt{
+font-variant: small-caps;
+}
+
+dd{
+font-style: italic;
+}
+
+seccion{}
+
+lista_o{}
+
+ul{
+list-style-type : square
+}
+
+lista_def{}
+
+a{
+color: lightblue;
+}
+a:visited{
+color : lightyellow;
+}
+a:hover{
+color : lightgrey;
+}
+
+
+body{
+color : black;
+background-color : lightgrey;
+}
+
+header#navegacio{
+background-color : rgba(20,20,20,0);
+}
+
+footer{
+font-size : 85%;
+}
+
+table {
+border : 1px solid blue;
+text-align : center;
+margin-left: auto;
+margin-right: auto;
+border-collapse : collapse;
+caption-side : bottom;
+}
+
+caption{
+font-size : x-small;
+text-align : left;
+}
+
+td {
+border : 1px solid white;
+text-align : center;
+}
+
+tr#encabezado_tabla{
+font-weight : bolder
+}
+
+tr:hover{
+background : white;
+color : lightgrey;
+}
+
+table.sinBorde {
+border : none;
+text-align : center;
+margin-left: auto;
+margin-right: auto;
+}
+
+td.sinBorde {
+border : none;
+text-align : center;
+}
+
+audio{
+margin-left: auto;
+margin-right: auto;
+}
+
+form input{
+padding : .3em;
+}
+
+form input:focus{
+border : 2px solid black;
+background-color : rgba(200,200,250,1);
+}
+
+form textarea {
+padding : .4em;
+width : 48%;
+}
+
+form textarea:focus{
+border : 2px solid black;
+}
+
+form fieldset{
+float: left;
+width: 40%;
+}
+
+label.block {
+display: block;
+margin: .1em 0 0 0;
+}
+
+div{
+margin : .4em .4em;
+}
+
+
+div.form {
+margin: .4em 0;
+}
+div.form label {
+float: left;
+}
+
+input.boto{
+margin : .4em;
+}
